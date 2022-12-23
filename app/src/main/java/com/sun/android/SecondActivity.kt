@@ -11,14 +11,13 @@ class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        var message = intent.getStringExtra("name")
-        var textView: TextView = findViewById(R.id.text_message)
-        textView.setText(message)
+        var message = intent.getStringExtra(EXTRA_MESSEAGE )
+            binding.textMessage.setText(message)
 
         binding.buttonSecond.setOnClickListener {
             val replyIntent = Intent(this, MainActivity::class.java)
             val reply = binding.editTextSecond.text.toString()
-            replyIntent.putExtra("exReply", reply)
+            replyIntent.putExtra(EXTRA_REPLY, reply)
             setResult(RESULT_OK, replyIntent)
             finish()
         }
