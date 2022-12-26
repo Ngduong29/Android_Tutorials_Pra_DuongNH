@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".implicit_intents.MainActivityImplicit">
+    <EditText
+        android:id="@+id/editText_URL"
+        android:layout_width="@dimen/dp_330"
+        android:layout_height="@dimen/dp_47"
+        android:layout_marginStart="@dimen/dp_1"
+        android:layout_marginBottom="@dimen/dp_15"
+        android:ems="10"
+        android:hint="@string/text"
+        app:layout_constraintBottom_toTopOf="@+id/button_OpenWeb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_OpenWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_94"
+        android:text="@string/openWeb"
+        app:layout_constraintStart_toStartOf="@+id/editText_URL"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_Location"
+        android:layout_width="@dimen/dp_330"
+        android:layout_height="@dimen/dp_47"
+        android:layout_marginTop="@dimen/dp_12"
+        android:ems="10"
+        android:hint="@string/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_OpenWeb" />
+
+    <Button
+        android:id="@+id/button_OpenLocate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_19"
+        android:text="@string/openLocate"
+        app:layout_constraintStart_toStartOf="@+id/editText_Location"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Location" />
+
+    <EditText
+        android:id="@+id/editText_Share"
+        android:layout_width="@dimen/dp_330"
+        android:layout_height="@dimen/dp_47"
+        android:layout_marginTop="@dimen/dp_16"
+        android:ems="10"
+        android:hint="@string/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_OpenLocate" />
+
+    <Button
+        android:id="@+id/button_Share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_12"
+        android:text="@string/share"
+        app:layout_constraintStart_toStartOf="@+id/editText_Share"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Share" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
