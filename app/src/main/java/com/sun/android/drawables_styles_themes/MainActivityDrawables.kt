@@ -19,21 +19,21 @@ class MainActivityDrawables : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        binding.decreaseTeam1.setOnClickListener {
+        binding.buttonDecrease1.setOnClickListener {
             mScore1--
-            binding.score1.text = mScore1.toString()
+            binding.textScore1.text = mScore1.toString()
         }
-        binding.decreaseTeam2.setOnClickListener {
+        binding.buttonDecrease2.setOnClickListener {
             mScore2--
-            binding.score2.text= mScore2.toString()
+            binding.textScore2.text= mScore2.toString()
         }
-        binding.increaseTeam1.setOnClickListener {
+        binding.buttonIncrease1.setOnClickListener {
             mScore1++
-            binding.score1.text = mScore1.toString()
+            binding.textScore1.text = mScore1.toString()
         }
-        binding.increaseTeam2.setOnClickListener {
+        binding.buttonIncrease2.setOnClickListener {
             mScore2++
-            binding.score2.text = mScore2.toString()
+            binding.textScore2.text = mScore2.toString()
         }
 
 
@@ -41,8 +41,8 @@ class MainActivityDrawables : AppCompatActivity() {
             mScore1 = savedInstanceState.getInt(STATE_SCORE_1)
             mScore2 = savedInstanceState.getInt(STATE_SCORE_2)
 
-            binding.score1.setText(mScore1.toString())
-            binding.score2.setText(mScore2.toString())
+            binding.textScore1.setText(mScore1.toString())
+            binding.textScore2.setText(mScore2.toString())
         }
 
 
