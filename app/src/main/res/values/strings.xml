@@ -4,4 +4,9 @@
     <string name="text_header_reply">Reply Received</string>
     <string name="send">Send</string>
     <string name="reply">Reply</string>
+    <string name="share">SHARE THIS TEXT</string>
+    <string name="text">Text Here</string>
+    <string name="openWeb">OPEN WEBSITE</string>
+    <string name="openLocate">OPEN LOCATION</string>
+
 </resources>

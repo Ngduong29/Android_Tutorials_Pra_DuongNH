@@ -14,9 +14,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        val getReply = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
-            if(result.resultCode == RESULT_OK){
-                val resultValue = result.data?.extras?.getString(EXTRA_REPLY)
+        val getReply = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+            if(it.resultCode == RESULT_OK){
+                val resultValue = it.data?.extras?.getString(EXTRA_REPLY)
                     binding.textMessageReply.setText(resultValue)
             }
         }
