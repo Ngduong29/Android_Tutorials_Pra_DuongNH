@@ -10,15 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".user_navigation.UserNavigationActivity"
-            android:exported="true">
+            android:name=".recycler.RecyclerViewActivity"
+            android:exported="true"
+            android:label="@string/title_activity_recycler_view"
+            android:theme="@style/Theme.Structure_Android.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
         </activity>
+        <activity
+            android:name=".user_navigation.UserNavigationActivity"
+            android:exported="false"></activity>
         <activity
             android:name=".menus_picker.PickDateActivity"
             android:exported="false">
