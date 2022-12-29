@@ -34,6 +34,8 @@
     <string name="next_day_ground_delivery">Next day ground delivery</string>
     <string name="pick_up">Pick up</string>
 
+
+
     <string-array name="labels_array">
         <item>Home</item>
         <item>Work</item>
@@ -46,15 +48,23 @@
     <string name="action_favorites_message">You selected Favorites.</string>
     <string name="action_contact_message">You selected Contact.</string>
     <string name="alert">ALERT</string>
-    <string name="alertText"> Hello World! Tap to test the alert</string>
     <string name="alertMessage">Click OK to continue, or Cancel to stop: </string>
+    <string name="alertText"> Hello World! Tap to test the alert</string>
     <string name="OK">OK</string>
-    <string name="okAction">Pressed OK</string>
     <string name="Cancel">Cancel</string>
-    <string name="cancelAction">Pressed Cancel</string>
     <string name="date">DATE</string>
     <string name="datePicker">Hello World! Choose a date and time</string>
     <string name="time">TIME</string>
+    <string name="ok">OK</string>
+    <string name="okAction">Pressed OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancelAction">Pressed Cancel</string>
+    <string name="tab1">These are the top stories: </string>
+    <string name="tab2">Tech news you can use: </string>
+    <string name="tab3">Cooking tips: </string>
+    <string name="tab_label1">Top Stories</string>
+    <string name="tab_label2">Tech News</string>
+    <string name="tab_label3">Cooking</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="team_1">Team 1</string>
     <string name="team_2">Team 2</string>
