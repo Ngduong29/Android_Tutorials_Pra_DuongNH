@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".user_navigation.UserNavigationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
             android:name=".menus_picker.PickDateActivity"
             android:exported="false">
             <meta-data
@@ -25,21 +35,18 @@
         </activity>
         <activity
             android:name=".menus_picker.OrderActivity"
-            android:exported="false">
+            android:exported="false"
+            android:label="Order Activity"
+            android:parentActivityName=".menus_picker.MainActivityMenuPicker">
             <meta-data
                 android:name="android.app.lib_name"
-                android:value="" />
+                android:value="." />
         </activity>
         <activity
             android:name=".menus_picker.MainActivityMenuPicker"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
 
             <meta-data
                 android:name="android.app.lib_name"
@@ -49,15 +56,10 @@
             android:name=".fragments.MainActivityFragments"
             android:exported="false">
 
-
-
         </activity>
         <activity
             android:name=".implicit_intents.MainActivityImplicit"
-            android:exported="false">
-
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".SecondActivity"
             android:exported="false"
@@ -65,14 +67,11 @@
             android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.app.lib_name"
-                android:value=""
-                />
+                android:value="" />
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>

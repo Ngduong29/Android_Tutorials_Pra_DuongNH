@@ -177,6 +177,7 @@ dependencies {
     implementation(Deps.constraint_layout)
     implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("com.android.support:design:26.1.0")
 
 
 

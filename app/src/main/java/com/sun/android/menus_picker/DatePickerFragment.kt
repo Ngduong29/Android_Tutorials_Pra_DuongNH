@@ -11,8 +11,8 @@ import java.util.*
 
 class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener {
     override fun onDateSet(datePicker: DatePicker?, year: Int, month: Int, day: Int) {
-        var activity = activity as PickDateActivity
-        activity.processDatePickerResult(year = year, month = month, day = day)
+        var activity = activity as? PickDateActivity
+        activity?.processDatePickerResult(year = year, month = month, day = day)
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
