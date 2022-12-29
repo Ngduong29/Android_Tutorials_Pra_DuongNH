@@ -8,6 +8,14 @@
     <string name="text">Text Here</string>
     <string name="openWeb">OPEN WEBSITE</string>
     <string name="openLocate">OPEN LOCATION</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="initial_count">0</string>
+    <string name="minus_button_description">Minus Button</string>
+    <string name="plus_button_description">Plus Button</string>
+    <string name="night_mode">Night Mode</string>
+    <string name="day_mode">Day Mode</string>
+
     <string name="title1">Cry for a Shadow</string>
 
     <string name="article1">Many a Beatle fanatic started down the outtake
