@@ -9,23 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".asyncTask.SimpleAsyncActivity"
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name=".recycler.RecyclerViewActivity"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_recycler_view"
             android:theme="@style/Theme.Structure_Android.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
             android:name=".user_navigation.UserNavigationActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".menus_picker.PickDateActivity"
             android:exported="false">
@@ -59,6 +68,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
+
         <activity
             android:name=".fragments.MainActivityFragments"
             android:exported="false">
