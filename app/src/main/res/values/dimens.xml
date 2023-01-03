@@ -523,5 +523,6 @@
     <dimen name="sp_58">58.00sp</dimen>
     <dimen name="sp_59">59.00sp</dimen>
     <dimen name="sp_60">60.00sp</dimen>
+    <dimen name="sp_112">112.00sp</dimen>
     <dimen name="fab_margin">16dp</dimen>
 </resources>

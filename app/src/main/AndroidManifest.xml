@@ -12,20 +12,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <receiver
-            android:name=".boardcasts.CustomReceiver"
-            android:enabled="true"
-            android:exported="true"></receiver>
-
         <activity
-            android:name=".boardcasts.PowerReceiverActivity"
+            android:name=".sharepreferences.SharePreferencesActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+
+        <receiver
+            android:name=".boardcasts.CustomReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".boardcasts.PowerReceiverActivity"
+            android:exported="false">
+
 
             <meta-data
                 android:name="android.app.lib_name"
@@ -34,7 +42,6 @@
         <activity
             android:name=".internet_connection.WhoWroteItActivity"
             android:exported="false">
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
