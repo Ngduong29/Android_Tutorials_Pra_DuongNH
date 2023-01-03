@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.sun.android">
+
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission
-        android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -12,14 +12,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <receiver
+            android:name=".boardcasts.CustomReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
         <activity
-            android:name=".internet_connection.WhoWroteItActivity"
+            android:name=".boardcasts.PowerReceiverActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".internet_connection.WhoWroteItActivity"
+            android:exported="false">
+
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -27,8 +42,6 @@
         <activity
             android:name=".asyncTask.SimpleAsyncActivity"
             android:exported="false">
-
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -79,7 +92,7 @@
         </activity>
         <activity
             android:name=".fragments.MainActivityFragments"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".implicit_intents.MainActivityImplicit"
             android:exported="false" />
