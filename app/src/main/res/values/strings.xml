@@ -63,7 +63,7 @@
     <string name="tab_label1">Top Stories</string>
     <string name="tab_label2">Tech News</string>
     <string name="tab_label3">Cooking</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="team_1">Team 1</string>
     <string name="team_2">Team 2</string>
     <string name="initial_count">0</string>
@@ -92,10 +92,8 @@
     <string name="close">Close</string>
 
     <string name="exception_message">must implement OnFragmentInteractionListener</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_recycler_view">RecyclerViewActivity</string>
-    <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
@@ -137,4 +135,12 @@
     <string name="power_disconnect">Power disconnected!</string>
     <string name="custom_boardcast">Custom Boardcast Received</string>
     <string name="action_custom">.ACTION_CUSTOM_BROADCAST</string>
+
+    <string name="blue_button">Blue</string>
+    <string name="green_button">Green</string>
+    <string name="red_button">Red</string>
+    <string name="black_button">Black</string>
+    <string name="default_count">0</string>
+    <string name="count_button">Count</string>
+    <string name="reset_button">Reset</string>
 </resources>
