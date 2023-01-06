@@ -143,4 +143,14 @@
     <string name="default_count">0</string>
     <string name="count_button">Count</string>
     <string name="reset_button">Reset</string>
+    
+    <string name="notify">Notify Me!</string>
+    <string name="notify_cancel">Cancel Me!</string>
+    <string name="notify_update">Update Me!</string>
+    <string name="notified_msg">This is your notification text.</string>
+    <string name="notified_title">You have been notified!</string>
+    <string name="notified_description">Notification from Mascot</string>
+    <string name="notified_update">Notification Updated!</string>
+    <string name="notified_button_update_notification">Update Notification</string>
+    <string name="mascot_notifition">Mascot Notification</string>
 </resources>
